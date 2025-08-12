@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRI RENGA JEWELLERY - A Symphony of Colour & Craft</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Custom font families and a new, vibrant color palette */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #FFFDF5; /* A warm, creamy off-white */
+            color: #4A2C2A; /* A rich, dark brown for text */
+        }
+        .font-serif-display {
+            font-family: 'Playfair Display', serif;
+        }
+        .text-gold {
+            color: #B8860B; /* A classic, rich gold */
+        }
+        .bg-gold {
+            background-color: #B8860B;
+        }
+        .border-gold {
+            border-color: #B8860B;
+        }
+        .text-emerald {
+            color: #006A4E; /* A deep, luxurious green */
+        }
+        .bg-emerald {
+            background-color: #006A4E;
+        }
+        .hero-bg {
+            background-image: linear-gradient(to right, rgba(255, 253, 245, 0.6), rgba(255, 253, 245, 0.2)), url('https://images.unsplash.com/photo-1617038220319-276d3cfab638?q=80&w=2787&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        .section-title-underline {
+            position: relative;
+            padding-bottom: 0.75rem;
+            display: inline-block;
+        }
+        .section-title-underline::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(to right, #B8860B, #D4AF37);
+        }
+        .testimonial-bg {
+            background-color: #F4EAD5; /* A soft, complementary beige */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-serif-display font-bold text-gold">SRI RENGA JEWELLERY</a>
+            <div class="hidden md:flex items-right space-x-8 text-base font-medium">
+                <a href="#collections" class="hover:text-gold transition duration-300">Collections</a>
+                <a href="#legacy" class="hover:text-gold transition duration-300">Our Legacy</a>
+                <a href="#testimonials" class="hover:text-gold transition duration-300">Testimonials</a>
+            </div>
+            <a href="#enquire" class="hidden md:inline-block bg-emerald text-white font-bold py-2 px-6 rounded-full hover:bg-emerald-700 transition duration-300 shadow-sm">Enquire Now</a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gold">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 border-t border-gray-200">
+            <a href="#collections" class="block py-2 text-center hover:text-gold">Collections</a>
+            <a href="#legacy" class="block py-2 text-center hover:text-gold">Our Legacy</a>
+            <a href="#testimonials" class="block py-2 text-center hover:text-gold">Testimonials</a>
+            <a href="#enquire" class="mt-2 block text-center bg-emerald text-white font-bold py-2 px-6 rounded-full hover:bg-emerald-700">Enquire Now</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg h-[70vh] md:h-[85vh] flex items-center">
+            <div class="container mx-auto px-6">
+                <div class="max-w-2xl">
+                    <h1 class="text-4xl md:text-6xl font-serif-display font-bold text-emerald leading-tight">A Symphony of Colour & Craft</h1>
+                    <p class="mt-4 text-lg text-gray-700 font-medium max-w-xl">Discover handcrafted jewellery that blends timeless tradition with contemporary brilliance.</p>
+                    <a href="#collections" class="mt-8 inline-block bg-gold text-white font-bold py-3 px-10 rounded-full hover:bg-yellow-600 transition duration-300 shadow-lg">View Our Masterpieces</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collections Section -->
+        <section id="collections" class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-serif-display font-bold text-emerald section-title-underline">Featured Collections</h2>
+                    <p class="mt-6 text-gray-600 max-w-2xl mx-auto">Each collection tells a unique story, crafted with passion and precision for the moments you'll cherish forever.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Product Card 1 -->
+                    <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1588444837429-b3852e338753?q=80&w=2814&auto=format&fit=crop" alt="Gemstone Jewellery" class="w-full h-80 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-serif-display font-bold text-emerald">The Emerald Suite</h3>
+                            <p class="text-gray-600 mt-2">Vibrant, ethically sourced gemstones set in classic designs.</p>
+                            <a href="#enquire" class="text-gold font-semibold mt-4 inline-block hover:underline">Explore More &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                     <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=2787&auto=format&fit=crop" alt="Gold Jewellery" class="w-full h-80 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-serif-display font-bold text-emerald">The Golden Era</h3>
+                            <p class="text-gray-600 mt-2">Exquisite 22k gold pieces that radiate timeless elegance.</p>
+                             <a href="#enquire" class="text-gold font-semibold mt-4 inline-block hover:underline">Explore More &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                     <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1627293589115-a3d6413f8158?q=80&w=2787&auto=format&fit=crop" alt="Silver Jewellery" class="w-full h-80 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-serif-display font-bold text-emerald">The Silver Lining</h3>
+                            <p class="text-gray-600 mt-2">Contemporary sterling silver for a touch of modern grace.</p>
+                             <a href="#enquire" class="text-gold font-semibold mt-4 inline-block hover:underline">Explore More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-24 testimonial-bg">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-serif-display font-bold text-emerald section-title-underline">Words of Trust</h2>
+                </div>
+                <div class="max-w-3xl mx-auto text-center">
+                     <p class="text-2xl font-serif-display italic text-gray-700">"The craftsmanship of my wedding set from SRI RENGA JEWELLERY is simply breathtaking. It felt like wearing a piece of art. Their attention to detail and personal service made the experience unforgettable."</p>
+                     <p class="mt-6 font-bold text-lg text-emerald">- Priya & Rohan, Coimbatore</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Legacy Section -->
+        <section id="legacy" class="py-24">
+            <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <img src="https://www.relojeriaalemana.com/home/imgs/editorial/tipos-piedras-preciosas-joyas/principal.jpg" alt="Artisan Jeweller" class="rounded-lg shadow-2xl w-full h-auto">
+                </div>
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-serif-display font-bold text-emerald mb-6">A Legacy of Purity & Passion</h2>
+                    <p class="text-lg text-gray-700 mb-4">For over sixty years, SRI RENGA JEWELLERY has been synonymous with trust. Our story is woven into the fabric of Coimbatore, built on a promise to deliver unparalleled beauty and uncompromising purity.</p>
+                    <p class="text-gray-600 mb-6">We honor this legacy by blending traditional artistry with innovative design, ensuring every piece that leaves our hands is a masterpiece destined to be treasured for generations.</p>
+                    <a href="#enquire" class="bg-gold text-white font-bold py-3 px-8 rounded-full hover:bg-yellow-600 transition duration-300 shadow-lg">Design Your Own Heirloom</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Enquiry Section -->
+        <section id="enquire" class="bg-emerald/5 py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-serif-display font-bold text-emerald section-title-underline">Private Consultation</h2>
+                    <p class="mt-6 text-gray-600 max-w-2xl mx-auto">Whether you're seeking the perfect gift, a bespoke creation, or advice from our experts, we invite you to connect with us.</p>
+                </div>
+                <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-xl">
+                    <form id="enquiry-form">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold" required>
+                            <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold" required>
+                        </div>
+                        <div class="mb-6">
+                            <textarea placeholder="How can we assist you today?" rows="5" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-emerald text-white font-bold py-3 px-10 rounded-full hover:bg-emerald-700 transition duration-300 w-full md:w-auto shadow-lg">Send Message</button>
+                        </div>
+                    </form>
+                    <div id="form-success-message" class="hidden mt-6 text-center text-green-800 bg-green-100 p-4 rounded-md">
+                        Thank you for your message! We will be in touch with you shortly.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white py-16">
+        <div class="container mx-auto px-6 text-center text-gray-300">
+            <a href="#" class="text-4xl font-serif-display font-bold text-gold">SRI RENGA JEWELLERY</a>
+            <p class="mt-4 max-w-md mx-auto">Crafting Coimbatore's Finest Heirlooms Since 1958.</p>
+            <div class="mt-8 flex justify-center space-x-6 text-lg">
+                <a href="#" class="hover:text-gold">Facebook</a>
+                <a href="#" class="hover:text-gold">Instagram</a>
+                <a href="#" class="hover:text-gold">WhatsApp</a>
+            </div>
+             <div class="mt-8 border-t border-gray-700 pt-8 text-gray-400">
+                <p>123 Jewel Street, Coimbatore, Tamil Nadu 641001</p>
+                <p>Phone: +91 98765 43210 | Email: contact@srirengajewellery.com</p>
+            </div>
+            <p class="mt-8 text-sm text-gray-500">&copy; 2025 SRI RENGA JEWELLERY. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form submission handler
+        const enquiryForm = document.getElementById('enquiry-form');
+        const successMessage = document.getElementById('form-success-message');
+        enquiryForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            enquiryForm.reset();
+            successMessage.classList.remove('hidden');
+            setTimeout(() => {
+                successMessage.classList.add('hidden');
+            }, 5000);
+        });
+    </script>
+
+</body>
+</html>
